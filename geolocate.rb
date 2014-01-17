@@ -11,4 +11,8 @@ data = JSON.parse(json_data)
 
 data1 = data["results"]
 
-puts data1[0]['geometry']["location"]
+lat = data1[0]['geometry']["location"]["lat"]
+lng = data1[0]['geometry']["location"]["lng"]
+
+puts "Latitude: "+lat.to_s
+puts "Longitude: "+lng.to_s
