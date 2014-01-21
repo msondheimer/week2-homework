@@ -1,7 +1,7 @@
 require 'open-uri'
 require 'json'
 
-puts "Enter an address:"
+puts "Please enter an address:"
 
 input = gets.gsub(" ","+")
 address = input.rstrip
